@@ -1,9 +1,8 @@
 'use client'
 import React from 'react'
 import '../globals.css'
-import {useDispatch,useSelector } from 'react-redux'
-import {forDarkTheme} from '../redux/theme'
-import {AiFillFacebook} from 'react-icons/ai'
+import {useSelector } from 'react-redux'
+
 
 export default function About() {
   let isforDarkTheme = useSelector((state) => state.theme.dark)

@@ -1,12 +1,12 @@
 'use client'
-import React, { useContext,useEffect } from 'react'
+import React from 'react'
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import '../globals.css'
 import {useDispatch,useSelector} from 'react-redux'
 import {forDarkTheme} from '../redux/theme'
 
 export default function Navbar() {
-   let isforDarkTheme = useSelector((state) => state.theme.dark)
+   let isforDarkTheme =  useSelector((state) => state.theme.dark); 
    let dispatch = useDispatch() 
 
   return (
@@ -16,8 +16,8 @@ export default function Navbar() {
                 <div className="font-satify italic text-2xl">
                     Nitesh Kumar
                 </div>
-                <div className=" text-3xl"  onClick={() => dispatch(forDarkTheme())}>
-                    <BsFillMoonStarsFill className="hover:cursor-pointer" />
+                <div className=" text-3xl">
+                    <BsFillMoonStarsFill className="hover:cursor-pointer" onClick={() => dispatch(forDarkTheme())} />
                 </div>
           </nav>
        </section>
@@ -25,3 +25,4 @@ export default function Navbar() {
   )
 }
 
+// onClick={() => dispatch(forDarkTheme())}

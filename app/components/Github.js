@@ -8,28 +8,29 @@ import { useSelector } from 'react-redux';
 export default function Github() {
   let isforDarkTheme = useSelector((state) => state.theme.dark)
 
-    let token = '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';
+    let token = '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';
 
     let headers = {
       Authorization : `Bearer ${token}`
     }
   
   let [respo,setRespo] = useState([])
-  
-  
+
   
   let fetchData = async() => {
           try {
            let res = await axios.get('https://api.github.com/users/Niteshkumar0/repos', { headers })
+          //  .then((data)=> setRespo('data',data))
            setRespo(res.data)
           } catch (error) {
-            console.log(error)
+            console.log("err",error)
           }       
   }
   
     useEffect(()=>{
       fetchData();
-    },[])
+      console.log("respo",respo)
+    },[respo])
     
   return (
     <>

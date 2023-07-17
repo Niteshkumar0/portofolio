@@ -85,7 +85,7 @@ export default function Skills() {
                      <img src="./images/tailwind.jpeg" className='h-10 ml-1 rounded-2xl  inline-block' alt="" />
                   </div>
                   <div className=' w-full flex flex-col text-left mx-4'>
-                     <div className={`${isforDarkTheme? 'text-white':'text-gray-700'}`}>Tailwind</div>
+                     <div  className={`${isforDarkTheme? 'text-white':'text-gray-700'}`}>Tailwind</div>
                      <div className={`w-full mt-1 ${isforDarkTheme?'bg-slate-500': 'bg-slate-400'} h-2 rounded  `}>
                         <div className={` w-4/5 ${isforDarkTheme?'bg-white': 'bg-slate-700'} h-2 rounded `}>
                       </div>
@@ -98,7 +98,7 @@ export default function Skills() {
                      <img src="./images/firebase.jpeg" className='h-10 ml-1 rounded-2xl inline-block' alt="" />
                   </div>
                   <div className=' w-full flex flex-col text-left mx-4'>
-                     <div className={`${isforDarkTheme? 'text-white':'text-gray-700'}`}>Firebase</div>
+                     <div  className={`${isforDarkTheme? 'text-white':'text-gray-700'}`}>Firebase</div>
                      <div className={`w-full mt-1 ${isforDarkTheme?'bg-slate-500': 'bg-slate-400'} h-2 rounded  `}>
                         <div className={` w-4/5 ${isforDarkTheme?'bg-white': 'bg-slate-700'} h-2 rounded`}>
                       </div>

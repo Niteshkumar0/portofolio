@@ -7,8 +7,8 @@ import {useSelector,useDispatch} from 'react-redux';
 import Link from 'next/link'
 export default function Main() {
 
-  let isforDarkTheme = useSelector((state) => state.theme.dark);
-  let dispatch = useDispatch();
+  let isforDarkTheme =  useSelector((state) => state.theme.dark);
+  // useSelector((state) => state.theme.dark);
 
   return (
     <>
@@ -45,4 +45,3 @@ export default function Main() {
     </>
   )
 }
- 

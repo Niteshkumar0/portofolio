@@ -25,19 +25,19 @@ export default function Footer() {
                     </nav>
                 </div>
                 <div className={` flex gap-4 s:justify-center s:mt-10 s:mb-14 mx-auto mt-10 mb-12 w-4/5 text-2xl ${isforDarkTheme? 'text-white' : 'text-black'}`}>
-                    <Link href='https://www.facebook.com/nitesh.goindani.31/' passHref>
+                    <Link href='https://www.facebook.com/nitesh.goindani.31/'>
                     <AiFillFacebook/>
                     </Link>
-                    <Link href='https://www.instagram.com/nitesh_goindani/' passHref>
+                    <Link href='https://www.instagram.com/nitesh_goindani/'>
                     <AiOutlineInstagram/>
                     </Link>
-                    <Link href='https://www.linkedin.com/in/nitesh-kumar-a30707245/' passHref>
+                    <Link href='https://www.linkedin.com/in/nitesh-kumar-a30707245/'>
                         <AiFillLinkedin/>
                     </Link>
-                    <Link href='https://twitter.com/Nitesh_Kumar_77' passHref>
+                    <Link href='https://twitter.com/Nitesh_Kumar_77'>
                         <AiFillTwitterCircle />
                     </Link>
-                    <Link href='https://github.com/Niteshkumar0' passHref>
+                    <Link href='https://github.com/Niteshkumar0'>
                         <BsGithub/>
                     </Link>
                 </div>

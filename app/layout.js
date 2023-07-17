@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Navbar from './components/Navbar';
+import ProviderWrap from './ProviderWrap';
 import {store} from './store'
 import {Provider} from 'react-redux'
 const inter = Inter({ subsets: ['latin'] })
@@ -18,9 +18,11 @@ export default function RootLayout({ children }) {
     </Head>
     <html lang="en">
       <body className={inter.className}>
-        <Provider store={store}>
+        {/* <Provider store={store}> */}
+        <ProviderWrap>
         {children}
-          </Provider>
+        </ProviderWrap>
+          {/* </Provider> */}
       </body>
     </html>
     </>
